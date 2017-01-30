@@ -1,5 +1,10 @@
 
-function whoAmI (){
-console.log ("Hi, my name is Brian and I'm 33 years old");
+
+function whoAmI (name,age){
+  console.log ("Hi, my, name is " + name + " and I am " + age + " years old");
+
+  var yearOfBirth = 2017 - age;
+
+  console.log ("I was born in " + yearOfBirth);
 }
-whoAmI();
+console.log(whoAmI("Justin", 33 ));
