@@ -1,0 +1,29 @@
+<script>
+function RockPaperScissors(userChoice){
+    var computer = 1 + Math.floor((Math.random()*3));
+
+    if (userChoice === computer){
+      console.log("Tie");
+    }
+    else if (userChoice === 1 && computer === 2){
+      console.log("You win, Rock crushes scissors");
+    }
+    else if (userChoice === 1 && computer === 3){
+      console.log("You lose, Paper covers rock");
+    }
+    else if (userChoice === 2 && computer === 1){
+      console.log("You lose, rock crushes scissors");
+    }
+    else if (userChoice === 2 && computer === 3){
+      console.log("You win, Scissors cut paper");
+    }
+    else if (userChoice === 3 && computer === 1){
+      console.log("You Win, paper covers rock");
+    }
+    else if (userChoice === 3 && computer === 2){
+      console.log("You lose, Scissors cut paper");
+}
+}
+RockPaperScissors(2);
+
+</script>
