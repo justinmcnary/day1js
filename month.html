@@ -1,6 +1,7 @@
 <script>
 
 function calander(month) {
+    month = month.toLowerCase();
     switch (month) {
         case "january":
         case "march":
@@ -20,9 +21,8 @@ function calander(month) {
         console.log(month + " has 30 days");
         break;
     }
-
 }
+var ans = (calander("aPriL"));
 
-console.log(calander("februrary"));
 
 </script>
